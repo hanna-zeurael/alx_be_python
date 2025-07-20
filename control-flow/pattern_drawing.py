@@ -1,3 +1,5 @@
+# pattern_drawing.py
+
 size = input("Enter the size of the pattern: ")
 size = int(size)
 
@@ -8,7 +10,9 @@ while size < 1:
 
 i = 0
 while i < size:
-    for j in range(size):
+    j = 0
+    while j < size:
         print("*", end="")
+        j += 1
     print()
     i += 1
