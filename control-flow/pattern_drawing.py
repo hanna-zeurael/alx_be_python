@@ -1,18 +1,13 @@
-# pattern_drawing.py
-
-size = input("Enter the size of the pattern: ")
-size = int(size)
+size = int(input("Enter the size of the pattern: "))
 
 while size < 1:
-    print("Size must be a positive integer. Please try again.")
-    size = input("Enter the size of the pattern: ")
-    size = int(size)
+    size = int(input("Size must be a positive integer. Please try again: "))
 
-i = 0
-while i < size:
-    j = 0
-    while j < size:
+row = 0
+while row < size:
+    col = 0
+    while col < size:
         print("*", end="")
-        j += 1
+        col += 1
     print()
-    i += 1
+    row += 1
